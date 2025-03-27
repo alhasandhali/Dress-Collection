@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecommerce.sellerpage.controller.SellerController">
+   <children>
+      <Label layoutX="254.0" layoutY="17.0" text="E-Commerce" textFill="#065ab4">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="622.0" layoutY="28.0" mnemonicParsing="false" onAction="#showList" prefHeight="32.0" prefWidth="78.0" text="Show List">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Separator layoutX="362.0" layoutY="86.0" orientation="VERTICAL" prefHeight="465.0" prefWidth="15.0" />
+      <Label layoutX="58.0" layoutY="137.0" text="Dress Name: (Jack &amp; Jane Hoodie)">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dressNameField" layoutX="58.0" layoutY="157.0" prefHeight="26.0" prefWidth="262.0" promptText="Enter Dress Name" />
+      <Label fx:id="nameError" alignment="CENTER" layoutX="58.0" layoutY="183.0" prefHeight="18.0" prefWidth="262.0" textFill="RED" />
+      <Label layoutX="58.0" layoutY="201.0" text="Dress Type: (Hoodie/Sweater)">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="dressTypeChoice" layoutX="58.0" layoutY="221.0" prefHeight="26.0" prefWidth="262.0" />
+      <Label fx:id="typeError" alignment="CENTER" layoutX="58.0" layoutY="247.0" prefHeight="18.0" prefWidth="262.0" textFill="RED" />
+      <Label layoutX="58.0" layoutY="265.0" text="Available Size: (Medium/Large)">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="sizeCombo" editable="true" layoutX="58.0" layoutY="285.0" prefHeight="26.0" prefWidth="262.0" promptText="Available Size" />
+      <Label fx:id="sizeError" alignment="CENTER" layoutX="58.0" layoutY="311.0" prefHeight="18.0" prefWidth="262.0" textFill="RED" />
+      <Label layoutX="58.0" layoutY="329.0" text="Dress Color: (White/Black)">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ColorPicker fx:id="colorPicker" layoutX="57.0" layoutY="349.0" prefHeight="26.0" prefWidth="262.0" />
+      <Label fx:id="colorError" alignment="CENTER" layoutX="58.0" layoutY="377.0" prefHeight="18.0" prefWidth="262.0" textFill="RED" />
+      <Label layoutX="58.0" layoutY="383.0" text="Price: (500 - 5000)">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Slider fx:id="priceSlider" layoutX="58.0" layoutY="404.0" majorTickUnit="10.0" max="5000.0" prefHeight="14.0" prefWidth="262.0" showTickLabels="true" snapToTicks="true" />
+      <Label fx:id="priceError" alignment="CENTER" layoutX="57.0" layoutY="437.0" prefHeight="18.0" prefWidth="262.0" textFill="RED" />
+      <Label layoutX="57.0" layoutY="455.0" prefHeight="20.0" prefWidth="262.0" text="Dress Details:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="dressDetailsArea" layoutX="58.0" layoutY="475.0" prefHeight="106.0" prefWidth="262.0" promptText="Enter dress details" />
+      <Label fx:id="detailsError" alignment="CENTER" layoutX="57.0" layoutY="580.0" prefHeight="18.0" prefWidth="262.0" textFill="RED" />
+      <Button fx:id="saveButton" layoutX="318.0" layoutY="598.0" mnemonicParsing="false" onAction="#save" prefHeight="43.0" prefWidth="103.0" text="Save">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="saveOutput" alignment="CENTER" layoutX="215.0" layoutY="650.0" prefHeight="26.0" prefWidth="309.0" textFill="#0da910">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="416.0" layoutY="96.0" prefHeight="20.0" prefWidth="262.0" text="Last Purchase Date: (2023-12-28)">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datePicker" layoutX="416.0" layoutY="114.0" prefHeight="26.0" prefWidth="262.0" promptText="YYYY-MM-DD" />
+      <Label fx:id="dateError" alignment="CENTER" layoutX="416.0" layoutY="140.0" prefHeight="18.0" prefWidth="262.0" textFill="RED" />
+      <Label layoutX="416.0" layoutY="158.0" prefHeight="20.0" prefWidth="262.0" text="Available Quantity: (0 - 500)">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="quantitySpinner" layoutX="415.0" layoutY="178.0" prefHeight="26.0" prefWidth="262.0" />
+      <Label fx:id="quantityError" alignment="CENTER" layoutX="415.0" layoutY="204.0" prefHeight="18.0" prefWidth="262.0" textFill="RED" />
+      <Label layoutX="416.0" layoutY="223.0" text="Discount Code: (SECRET20)">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="discountField" layoutX="415.0" layoutY="243.0" prefHeight="26.0" prefWidth="262.0" promptText="Enter coupon code" />
+      <Label fx:id="codeError" alignment="CENTER" layoutX="415.0" layoutY="268.0" prefHeight="18.0" prefWidth="262.0" textFill="RED" />
+      <Label layoutX="416.0" layoutY="288.0" prefHeight="20.0" prefWidth="262.0" text="Targated Customer: (Male/Female)">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="416.0" layoutY="319.0" mnemonicParsing="false" selected="true" text="Male">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="genderToggle" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="496.0" layoutY="319.0" mnemonicParsing="false" text="Female" toggleGroup="$genderToggle">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="genderError" alignment="CENTER" layoutX="416.0" layoutY="343.0" prefHeight="18.0" prefWidth="262.0" textFill="RED" />
+      <CheckBox fx:id="checkBox" layoutX="416.0" layoutY="364.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="262.0" text="Enable Facebook Boosting">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="415.0" layoutY="468.0" text="Upload Picture:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageViewer" fitHeight="140.0" fitWidth="138.0" layoutX="524.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="524.0" layoutY="559.0" mnemonicParsing="false" onAction="#imageUploader" prefHeight="26.0" prefWidth="138.0" text="Upload">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="imageError" alignment="CENTER" layoutX="523.0" layoutY="586.0" prefHeight="18.0" prefWidth="138.0" textFill="RED" />
+      <Label layoutX="59.0" layoutY="73.0" prefHeight="20.0" prefWidth="262.0" text="Dress ID:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dressIdField" layoutX="59.0" layoutY="93.0" prefHeight="26.0" prefWidth="262.0" promptText="Enter Dress ID" />
+      <Label fx:id="idError" alignment="CENTER" layoutX="59.0" layoutY="120.0" prefHeight="18.0" prefWidth="262.0" textFill="RED" />
+      <Button fx:id="updateButton" layoutX="318.0" layoutY="598.0" mnemonicParsing="false" onAction="#update" prefHeight="43.0" prefWidth="102.0" text="Update" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

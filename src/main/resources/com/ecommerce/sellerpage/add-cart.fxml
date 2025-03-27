@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecommerce.sellerpage.controller.AddCartController">
+    <children>
+        <Label layoutX="262.0" layoutY="14.0" text="E-Commerce" textFill="#065ab4">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Label>
+        <TextField fx:id="searchField" layoutX="51.0" layoutY="68.0" prefHeight="26.0" prefWidth="650.0" promptText="Type and enter to search......" />
+        <TableView fx:id="productTable" layoutX="51.0" layoutY="104.0" onMouseClicked="#onClickTable" prefHeight="249.0" prefWidth="650.0">
+            <columns>
+                <TableColumn fx:id="nameCol" prefWidth="116.60000610351562" text="Name" />
+                <TableColumn fx:id="sizeCol" prefWidth="104.0" text="Size" />
+                <TableColumn fx:id="colorCol" prefWidth="94.60003662109375" text="Color" />
+                <TableColumn fx:id="priceCol" prefWidth="117.60003662109375" text="Price" />
+                <TableColumn fx:id="quantityCol" prefWidth="89.5999755859375" text="Quantity" />
+                <TableColumn fx:id="totalCol" prefWidth="124.0" text="Total price" />
+            </columns>
+        </TableView>
+        <Button layoutX="635.0" layoutY="26.0" mnemonicParsing="false" onAction="#back" text="Back">
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font>
+        </Button>
+      <Button layoutX="310.0" layoutY="628.0" mnemonicParsing="false" onAction="#buy" prefHeight="30.0" prefWidth="125.0" text="Buy">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER_RIGHT" layoutX="494.0" layoutY="363.0" prefHeight="20.0" prefWidth="78.0" text="Total Price:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalLabel" alignment="CENTER_RIGHT" layoutX="582.0" layoutY="363.0" prefHeight="20.0" prefWidth="119.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

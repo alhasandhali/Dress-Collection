@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecommerce.sellerpage.controller.SellerDashboardController">
+   <children>
+      <Label layoutX="262.0" layoutY="14.0" text="E-Commerce" textFill="#065ab4">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchField" layoutX="51.0" layoutY="68.0" prefHeight="26.0" prefWidth="650.0" promptText="Type and enter to search......" />
+      <TableView fx:id="productTable" layoutX="51.0" layoutY="104.0" onMouseClicked="#onClickTable" prefHeight="200.0" prefWidth="650.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="38.799991607666016" text="#" />
+          <TableColumn fx:id="nameCol" prefWidth="86.39999389648438" text="Name" />
+            <TableColumn fx:id="typeCol" prefWidth="93.59999084472656" text="Type" />
+            <TableColumn fx:id="colorCol" prefWidth="109.5999755859375" text="Color" />
+            <TableColumn fx:id="priceCol" prefWidth="85.20001220703125" text="Price" />
+            <TableColumn fx:id="purchaseCol" prefWidth="100.5999755859375" text="Purchase Date" />
+            <TableColumn fx:id="quantityCol" prefWidth="74.0" text="Quantity" />
+            <TableColumn fx:id="boostedCol" prefWidth="65.0" text="Boosted" />
+        </columns>
+      </TableView>
+      <Separator layoutX="239.0" layoutY="314.0" prefHeight="0.0" prefWidth="272.0" />
+      <Label alignment="CENTER" layoutX="51.0" layoutY="342.0" prefHeight="19.0" prefWidth="650.0" text="Selected Dress Information / Last Entried Product Information (Default)">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="370.0" layoutY="376.0" orientation="VERTICAL" prefHeight="309.0" prefWidth="11.0" />
+      <Label fx:id="showNameLabel" layoutX="180.0" layoutY="422.0" prefHeight="20.0" prefWidth="143.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="showTypeLabel" layoutX="180.0" layoutY="456.0" prefHeight="20.0" prefWidth="143.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="showSizeLabel" layoutX="180.0" layoutY="491.0" prefHeight="20.0" prefWidth="143.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="showColorLabel" layoutX="180.0" layoutY="525.0" prefHeight="20.0" prefWidth="143.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="showPriceLabel" layoutX="180.0" layoutY="561.0" prefHeight="27.0" prefWidth="143.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="showDetailsLabel" layoutX="180.0" layoutY="596.0" prefHeight="20.0" prefWidth="143.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="showDateLabel" layoutX="181.0" layoutY="629.0" prefHeight="20.0" prefWidth="143.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="showQuantityLabel" layoutX="180.0" layoutY="664.0" prefHeight="20.0" prefWidth="143.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="427.0" layoutY="395.0" prefHeight="20.0" prefWidth="100.0" text="Discount Code:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="showGenderLabel" layoutX="563.0" layoutY="431.0" prefHeight="20.0" prefWidth="136.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="showCheckLabel" layoutX="556.0" layoutY="466.0" prefHeight="20.0" prefWidth="143.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" layoutX="592.0" layoutY="26.0" mnemonicParsing="false" onAction="#back" text="Product Entry">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Blend mode="HARD_LIGHT" />
+         </effect>
+      </Button>
+      <Button cache="true" layoutX="502.0" layoutY="616.0" mnemonicParsing="false" onAction="#edit" prefHeight="25.0" prefWidth="70.0" text="Edit" />
+      <Button layoutX="582.0" layoutY="616.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="70.0" text="Delete">
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+      <Button layoutX="650.0" layoutY="392.0" mnemonicParsing="false" onAction="#passShow" text="Show" />
+      <ImageView fx:id="showImage" fitHeight="112.0" fitWidth="200.0" layoutX="463.0" layoutY="488.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="showDiscountLabel2" layoutX="531.0" layoutY="397.0" prefHeight="20.0" prefWidth="100.0" text="****************">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="422.0" prefHeight="20.0" prefWidth="83.0" text="Dress Name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="456.0" prefHeight="20.0" prefWidth="83.0" text="Dress Type:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="491.0" prefHeight="20.0" prefWidth="92.0" text="Available Size:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="525.0" prefHeight="20.0" prefWidth="83.0" text="Dress Color:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="561.0" prefHeight="20.0" prefWidth="83.0" text="Price:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="596.0" prefHeight="20.0" prefWidth="83.0" text="Dress Details:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="629.0" prefHeight="20.0" prefWidth="125.0" text="Last Purchase Date:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="664.0" prefHeight="20.0" prefWidth="125.0" text="Avaiable Quantity:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="showDiscountLabel1" layoutX="427.0" layoutY="431.0" prefHeight="20.0" prefWidth="136.0" text="Targeted Customers:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="showDiscountLabel11" layoutX="427.0" layoutY="466.0" prefHeight="20.0" prefWidth="136.0" text="Facebook Boosting:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="showIdLabel" layoutX="180.0" layoutY="394.0" prefHeight="20.0" prefWidth="143.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="394.0" prefHeight="20.0" prefWidth="83.0" text="Dress ID:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="51.0" layoutY="28.0" mnemonicParsing="false" onAction="#logOut" text="Log Out">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="502.0" layoutY="649.0" mnemonicParsing="false" onAction="#orderList" prefHeight="30.0" prefWidth="150.0" text="Show Order List">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

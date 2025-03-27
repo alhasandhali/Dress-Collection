@@ -1,0 +1,19 @@
+Jacket, Sweater, Large & Medium, 0X000000FF, 743.0, Very comfortable and stylish, 2024-01-04, 15, OK2024, Male, true
+Jane Hoodie, Hoodie, Medium, 0XFF00FFFF, 928.0, Very comfortable and looks good, 2024-01-05, 20, OK2023, Female, true
+Jack, Sweater, Extra Large, 0X000000FF, 1735.0, Ok, 2024-01-05, 11, OK2025, Male, true
+Shirt, Shirt, Medium, 0X008080FF, 678.0, Ok, 2024-01-05, 3, Ok234, Male, true
+T-Shirt, Hoodie, Medium, 0XFF8080FF, 735.0, Good quality, 2024-01-05, 15, OK23, Male, true
+Pant, Pant, Medium, 0XFFFFFFFF, 1040.0, Very good quality., 2024-01-05, 8, OK23, Male, true
+Hoodie, Hoodie, Medium, 0X999999FF, 935.0, Good, 2024-01-05, 10, OK24, Male, true
+Swipe Shirt, Sweater, Medium & Large, 0X0000FFFF, 678.0, Very comfortable and Warming, 2024-01-05, 15, OK25, Male, true
+Hoodie, Sweater, Small, 0X993300FF, 1265.0, dsdfafsdfghdh, 2024-01-04, 6, zxdgh, Female, true
+Jacket, Sweater, Medium, 0X00FF00FF, 1203.0, Comfortable, 2024-01-05, 10, OK2026, Female, true
+Sweat Shirt, Sweater, Medium & Large, 0X000000FF, 678.0, Comfortable, 2024-01-05, 5, OK28, Male, false
+T-Shirt, T-Shirt, Medium, 0X666666FF, 1943.0, Very nice, 2024-01-05, 11, , Female, true
+T-Shirt, T-Shirt, Medium, 0X666666FF, 1943.0, Very nice, 2024-01-05, 11, badisf, Female, true
+Sweater, Sweater, Large, 0XFFFFFFFF, 1685.0, Very good quality, 2024-01-03, 12, dasf, Male, true
+ok, Shirt, Medium, 0XB31A1AFF, 1638.0, asfdasd, 2024-01-04, 8, asfdasd, Male, false
+xcz, Sweater, zxdb, 0X1A3399FF, 1025.0, zxbcz, 2024-01-02, 9, , Female, true
+sjbdfg, Sweater, Small, 0X999999FF, 1765.0, asgfg, 2024-01-03, 6, , Female, true
+Jacket, Sweater, Medium & Large, 0X000000FF, 743.0, Comfy, 2024-01-08, 8, OK30, Male, true
+Hoodie, Hoodie, Medium, 0X003300FF, 798.0, Comfy, 2024-01-08, 15, , Female, true
